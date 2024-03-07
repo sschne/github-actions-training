@@ -1,5 +1,5 @@
 FROM alpine:3.10
-cp entrypoint.sh .
+COPY entrypoint.sh .
 RUN chmod +x entrypoint.sh
 
 CMD ["./entrypoint.sh"]
