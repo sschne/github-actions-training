@@ -44,7 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: Load-Test
     environment: Production
-    if: github.inputs.environment == "Production"
+    if: github.event.inputs.environment == 'Production'
     steps:
       - run: |
           echo "Step 1 deploying..."
